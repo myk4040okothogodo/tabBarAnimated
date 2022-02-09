@@ -1,14 +1,14 @@
 import * as React from 'react';
 import {Dimensions,View, Animated,StyleSheet, SafeAreaView } from 'react-native';
-import { Svg } from "expo";
+import {Svg} from "expo";
 import * as shape from "d3-shape";
 
 import StaticTabbar from "./StaticTabbar";
-const AnimatedSvg = Animated.createAnimatedComponent(Svg);
-const { width } = Dimensions.get("window")
-const height = 64;
-const { Path } = Svg;
 
+const {width} = Dimensions.get("window")
+const height = 64;
+const {Path} = Svg;
+const AnimatedSvg = Animated.createAnimatedComponent(Svg);
 // .curve(shape.curveBasis)
 const tabs = [
   {
